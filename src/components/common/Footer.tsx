@@ -1,67 +1,87 @@
-import React from "react";
+import { Link } from "react-router-dom";
+import { Mail, Phone, MapPin, Building2 } from "lucide-react";
 
-const Footer: React.FC = () => {
+const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gradient-to-r from-amber-50 to-orange-50 border-t border-amber-200">
-      <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* ================= About Us ================= */}
+    <footer className="bg-primary text-primary-foreground">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
           <div>
-            {/* Title: Change to your project's "About Us" */}
-            <h3 className="text-lg font-semibold text-amber-800 mb-4">
-              {/* About Us */}
-            </h3>
-            <p className="text-gray-600">
-              {/* Fill in your "About Us" introduction here, for example: Committed to xxx, making xxx more xxx */}
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center">
+                <span className="text-xl font-bold text-secondary-foreground">T</span>
+              </div>
+              <div className="flex flex-col">
+                <span className="text-lg font-bold">Techneqatar</span>
+                <span className="text-xs opacity-80">Building Qatar's Future</span>
+              </div>
+            </div>
+            <p className="text-sm opacity-90 leading-relaxed">
+              Leading construction company specializing in government and infrastructure projects across Qatar.
             </p>
           </div>
 
-          {/* ================= Contact Information ================= */}
           <div>
-            {/* Title: Contact Information */}
-            <h3 className="text-lg font-semibold text-amber-800 mb-4">
-              {/* Contact Information */}
-            </h3>
-            <div className="text-gray-600 space-y-2">
-              <p>
-                {/* Address: XXX Street, XXX District, XXX City, XXX Province */}
-              </p>
-              <p>
-                {/* Phone: 010-XXXXXXX */}
-              </p>
-              <p>
-                {/* Email: info@example.com */}
-              </p>
-            </div>
+            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <ul className="space-y-2 text-sm">
+              <li><Link to="/about" className="opacity-90 hover:opacity-100 hover:underline transition-opacity">About Us</Link></li>
+              <li><Link to="/services" className="opacity-90 hover:opacity-100 hover:underline transition-opacity">Services</Link></li>
+              <li><Link to="/projects" className="opacity-90 hover:opacity-100 hover:underline transition-opacity">Projects</Link></li>
+              <li><Link to="/certifications" className="opacity-90 hover:opacity-100 hover:underline transition-opacity">Certifications</Link></li>
+              <li><Link to="/careers" className="opacity-90 hover:opacity-100 hover:underline transition-opacity">Careers</Link></li>
+            </ul>
           </div>
 
-          {/* ================= Business Hours / Other Information / Can be deleted ================= */}
           <div>
-            {/* Title: Can be changed to "Business Hours" or "Service Hours" */}
-            <h3 className="text-lg font-semibold text-amber-800 mb-4">
-              {/* Business Hours */}
-            </h3>
-            <div className="text-gray-600 space-y-2">
-              <p>
-                {/* Monday to Friday: 9:00-18:00 */}
-              </p>
-              <p>
-                {/* Please check announcements for weekends and public holidays */}
-              </p>
-              <p>
-                {/* Other notes, such as "Advance booking required" */}
-              </p>
-            </div>
+            <h3 className="text-lg font-semibold mb-4">Services</h3>
+            <ul className="space-y-2 text-sm">
+              <li className="opacity-90">Civil & Structural Construction</li>
+              <li className="opacity-90">Government Infrastructure</li>
+              <li className="opacity-90">Roads & Utilities</li>
+              <li className="opacity-90">Commercial Buildings</li>
+              <li className="opacity-90">Turnkey Solutions</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
+            <ul className="space-y-3 text-sm">
+              <li className="flex items-start gap-2">
+                <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                <span className="opacity-90">Doha, Qatar</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <Phone className="w-4 h-4 flex-shrink-0" />
+                <span className="opacity-90">+974 XXXX XXXX</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <Mail className="w-4 h-4 flex-shrink-0" />
+                <span className="opacity-90">info@techneqatar.com</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <Building2 className="w-4 h-4 flex-shrink-0" />
+                <span className="opacity-90">MMUP/MME Registered</span>
+              </li>
+            </ul>
           </div>
         </div>
 
-        {/* ================= Copyright Section ================= */}
-        <div className="mt-8 pt-8 border-t border-amber-200 text-center text-gray-600">
-          <p>
-            {/* © {currentYear} Your Company or Organization Name */}
-          </p>
+        <div className="mt-12 pt-8 border-t border-primary-foreground/20">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+            <p className="opacity-90">
+              {currentYear} Techneqatar
+            </p>
+            <div className="flex gap-6">
+              <Link to="/privacy" className="opacity-90 hover:opacity-100 hover:underline transition-opacity">
+                Privacy Policy
+              </Link>
+              <Link to="/terms" className="opacity-90 hover:opacity-100 hover:underline transition-opacity">
+                Terms & Conditions
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
