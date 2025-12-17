@@ -50,7 +50,7 @@ const Home = () => {
       <section 
         className="relative h-[600px] flex items-center justify-center text-center"
         style={{
-          backgroundImage: `linear-gradient(135deg, hsl(220 60% 25% / 0.92), hsl(0 45% 35% / 0.92)), url('https://miaoda-site-img.s3cdn.medo.dev/images/c0634d73-edd1-4636-8c85-41ef6198c190.jpg')`,
+          backgroundImage: `linear-gradient(135deg, hsl(220 60% 25% / 0.92), hsl(0 45% 35% / 0.92)), url('https://miaoda-site-img.s3cdn.medo.dev/images/2cd3b794-2bea-44c8-ad06-022ff3a16343.jpg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
