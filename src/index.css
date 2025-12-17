@@ -49,6 +49,7 @@ All colors MUST be HSL.
     
     --shadow-elegant: 0 10px 40px -10px hsl(220 60% 15% / 0.3);
     --shadow-card: 0 4px 20px hsl(220 40% 15% / 0.08);
+    --shadow-hover: 0 20px 60px -10px hsl(220 60% 15% / 0.25);
     --shadow-glow: 0 0 30px hsl(45 90% 55% / 0.3);
     
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
