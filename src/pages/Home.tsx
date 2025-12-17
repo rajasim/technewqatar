@@ -80,7 +80,7 @@ const Home = () => {
       <section 
         className="relative h-[700px] flex items-center justify-center text-center overflow-hidden"
         style={{
-          backgroundImage: `linear-gradient(135deg, hsl(220 60% 25% / 0.92), hsl(0 45% 35% / 0.92)), url('https://miaoda-site-img.s3cdn.medo.dev/images/2cd3b794-2bea-44c8-ad06-022ff3a16343.jpg')`,
+          backgroundImage: `linear-gradient(135deg, hsl(0 0% 20% / 0.92), hsl(30 25% 45% / 0.92)), url('https://miaoda-site-img.s3cdn.medo.dev/images/2cd3b794-2bea-44c8-ad06-022ff3a16343.jpg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed',
@@ -88,7 +88,7 @@ const Home = () => {
       >
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background/20 animate-pulse-slow"></div>
         <div className="absolute top-20 left-10 w-72 h-72 bg-accent/20 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-primary-foreground relative z-10 animate-scale-in">
           <Badge className="mb-6 bg-accent text-accent-foreground hover:bg-accent/90 animate-bounce-slow inline-flex items-center gap-2">
             <Sparkles className="w-4 h-4" />
