@@ -80,16 +80,14 @@ const Home = () => {
       <section 
         className="relative h-[700px] flex items-center justify-center text-center overflow-hidden"
         style={{
-          backgroundImage: `linear-gradient(135deg, hsl(0 0% 20% / 0.92), hsl(30 25% 45% / 0.92)), url('https://miaoda-site-img.s3cdn.medo.dev/images/2cd3b794-2bea-44c8-ad06-022ff3a16343.jpg')`,
+          backgroundImage: `url('https://miaoda-site-img.s3cdn.medo.dev/images/2cd3b794-2bea-44c8-ad06-022ff3a16343.jpg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed',
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background/20 animate-pulse-slow"></div>
-        <div className="absolute top-20 left-10 w-72 h-72 bg-accent/20 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-primary-foreground relative z-10 animate-scale-in">
+        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-white relative z-10 animate-scale-in">
           <Badge className="mb-6 bg-accent text-accent-foreground hover:bg-accent/90 animate-bounce-slow inline-flex items-center gap-2">
             <Sparkles className="w-4 h-4" />
             Government & Infrastructure Specialists
@@ -107,14 +105,14 @@ const Home = () => {
                 Request Proposal <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="bg-card/10 backdrop-blur-sm border-primary-foreground/30 text-primary-foreground hover:bg-card/20 hover:scale-110 transition-all duration-300">
+            <Button asChild size="lg" variant="outline" className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20 hover:scale-110 transition-all duration-300">
               <Link to="/projects">View Projects</Link>
             </Button>
           </div>
         </div>
       </section>
 
-      <section ref={statsSection.ref} className="py-16 bg-gradient-to-b from-muted/30 to-background">
+      <section ref={statsSection.ref} className="py-16 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 xl:grid-cols-4 gap-6">
             {stats.map((stat, index) => (
@@ -126,8 +124,8 @@ const Home = () => {
                 style={{ animationDelay: `${index * 150}ms` }}
               >
                 <CardContent className="pt-6">
-                  <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center animate-pulse-slow">
-                    <stat.icon className="w-8 h-8 text-primary-foreground" />
+                  <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center animate-pulse-slow">
+                    <stat.icon className="w-8 h-8 text-primary" />
                   </div>
                   <div className="text-3xl xl:text-4xl font-bold text-primary mb-2 animate-slide-up">{stat.value}</div>
                   <div className="text-sm text-muted-foreground">{stat.label}</div>
@@ -139,7 +137,6 @@ const Home = () => {
       </section>
 
       <section ref={aboutSection.ref} className="py-24 bg-background relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-pulse-slow"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-12 items-center">
             <div className={aboutSection.isVisible ? 'animate-slide-right' : 'opacity-0'}>
@@ -159,7 +156,7 @@ const Home = () => {
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-8">
                 <div className="flex items-start gap-3 group hover:-translate-y-1 transition-transform duration-300">
-                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
                     <Target className="w-6 h-6 text-primary" />
                   </div>
                   <div>
@@ -168,7 +165,7 @@ const Home = () => {
                   </div>
                 </div>
                 <div className="flex items-start gap-3 group hover:-translate-y-1 transition-transform duration-300">
-                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-secondary/20 to-secondary/10 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-12 h-12 rounded-lg bg-secondary/10 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
                     <Eye className="w-6 h-6 text-secondary" />
                   </div>
                   <div>
@@ -177,7 +174,7 @@ const Home = () => {
                   </div>
                 </div>
                 <div className="flex items-start gap-3 group hover:-translate-y-1 transition-transform duration-300">
-                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-accent/20 to-accent/10 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
                     <Shield className="w-6 h-6 text-accent" />
                   </div>
                   <div>
@@ -199,21 +196,18 @@ const Home = () => {
                   alt="Techneqatar Construction Site"
                   className="w-full h-[500px] object-cover group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
-                <div className="absolute bottom-0 left-0 right-0 p-8 text-primary-foreground transform group-hover:translate-y-0 transition-transform duration-300">
+                <div className="absolute inset-0 bg-black/30"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-8 text-white transform group-hover:translate-y-0 transition-transform duration-300">
                   <h3 className="text-2xl font-bold mb-2">Building Excellence Since 2008</h3>
                   <p className="text-sm opacity-90">Delivering quality construction projects across Qatar</p>
                 </div>
               </div>
-              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-accent rounded-full opacity-20 blur-3xl animate-pulse-slow"></div>
-              <div className="absolute -top-6 -left-6 w-32 h-32 bg-primary rounded-full opacity-20 blur-3xl animate-pulse-slow" style={{ animationDelay: '1s' }}></div>
             </div>
           </div>
         </div>
       </section>
 
-      <section ref={servicesSection.ref} className="py-24 bg-gradient-to-b from-muted/30 to-background relative overflow-hidden">
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary/5 rounded-full blur-3xl animate-float"></div>
+      <section ref={servicesSection.ref} className="py-24 bg-muted/30 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className={`text-center mb-16 ${servicesSection.isVisible ? 'animate-slide-down' : 'opacity-0'}`}>
             <Badge className="mb-4 bg-primary/10 text-primary hover:bg-primary/20 animate-bounce-slow">Our Services</Badge>
@@ -232,8 +226,8 @@ const Home = () => {
                 style={{ animationDelay: `${index * 150}ms` }}
               >
                 <CardHeader>
-                  <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center mb-4 group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 animate-pulse-slow">
-                    <service.icon className="w-8 h-8 text-primary-foreground" />
+                  <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 animate-pulse-slow">
+                    <service.icon className="w-8 h-8 text-primary" />
                   </div>
                   <CardTitle className="text-xl group-hover:text-primary transition-colors">{service.title}</CardTitle>
                 </CardHeader>
@@ -259,7 +253,6 @@ const Home = () => {
       </section>
 
       <section ref={projectsSection.ref} className="py-24 bg-background relative overflow-hidden">
-        <div className="absolute top-1/2 right-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl animate-float" style={{ animationDelay: '3s' }}></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className={`text-center mb-16 ${projectsSection.isVisible ? 'animate-slide-down' : 'opacity-0'}`}>
             <Badge className="mb-4 bg-primary/10 text-primary hover:bg-primary/20">Featured Projects</Badge>
@@ -283,7 +276,7 @@ const Home = () => {
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-125 group-hover:rotate-3 transition-all duration-700"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all duration-500"></div>
                   <Badge className="absolute top-4 right-4 bg-accent text-accent-foreground shadow-lg animate-bounce-slow">
                     {project.status}
                   </Badge>
@@ -317,8 +310,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section ref={certificationsSection.ref} className="py-24 bg-gradient-to-b from-muted/30 to-background relative overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-accent/5 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }}></div>
+      <section ref={certificationsSection.ref} className="py-24 bg-muted/30 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className={`text-center mb-16 ${certificationsSection.isVisible ? 'animate-slide-down' : 'opacity-0'}`}>
             <Badge className="mb-4 bg-accent/10 text-accent hover:bg-accent/20">Certifications</Badge>
@@ -337,7 +329,7 @@ const Home = () => {
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <CardContent className="p-6 flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-accent/20 to-accent/10 flex items-center justify-center flex-shrink-0 group-hover:scale-125 group-hover:rotate-12 transition-all duration-500">
+                  <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0 group-hover:scale-125 group-hover:rotate-12 transition-all duration-500">
                     <CheckCircle2 className="w-6 h-6 text-accent animate-pulse-slow" />
                   </div>
                   <span className="font-medium group-hover:text-accent transition-colors">{cert}</span>
@@ -353,14 +345,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="py-24 bg-gradient-to-br from-primary via-primary to-secondary text-primary-foreground relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 left-0 w-96 h-96 bg-accent rounded-full blur-3xl animate-float"></div>
-          <div className="absolute bottom-0 right-0 w-96 h-96 bg-secondary rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
-        </div>
-        <div className="absolute inset-0 animate-pulse-slow opacity-20">
-          <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-accent rounded-full blur-3xl"></div>
-        </div>
+      <section className="py-24 bg-primary text-primary-foreground relative overflow-hidden">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 animate-scale-in">
           <h2 className="text-3xl xl:text-5xl font-bold mb-6 animate-slide-down">Ready to Start Your Project?</h2>
           <p className="text-lg xl:text-xl mb-10 opacity-95 max-w-2xl mx-auto animate-slide-up" style={{ animationDelay: '200ms' }}>
@@ -368,12 +353,12 @@ const Home = () => {
             Let's build the future together.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up" style={{ animationDelay: '400ms' }}>
-            <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 hover:scale-110 transition-all duration-300 shadow-hover animate-glow">
+            <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 hover:scale-110 transition-all duration-300 shadow-hover">
               <Link to="/contact">
                 Contact Us <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="bg-card/10 backdrop-blur-sm border-primary-foreground/30 text-primary-foreground hover:bg-card/20 hover:scale-110 transition-all duration-300">
+            <Button asChild size="lg" variant="outline" className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20 hover:scale-110 transition-all duration-300">
               <Link to="/services">Our Services</Link>
             </Button>
           </div>
