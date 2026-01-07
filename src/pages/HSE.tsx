@@ -227,7 +227,7 @@ const HSE = () => {
             <CardContent>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  At Techneqatar, health, safety, and environmental protection are not just regulatory requirements – 
+                  At Technewqatar, health, safety, and environmental protection are not just regulatory requirements – 
                   they are fundamental values that guide everything we do. We believe that all incidents are preventable, 
                   and we are committed to creating and maintaining a culture where safety is everyone's responsibility.
                 </p>

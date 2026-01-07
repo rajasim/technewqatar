@@ -16,7 +16,7 @@ const Privacy = () => {
             </CardHeader>
             <CardContent className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Techneqatar ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy 
+                Technewqatar ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy 
                 explains how we collect, use, disclose, and safeguard your information when you visit our website 
                 or use our services.
               </p>
@@ -47,7 +47,7 @@ const Privacy = () => {
                 </li>
                 <li>
                   <strong>Application Data:</strong> Resume/CV, employment history, and other information provided 
-                  when applying for positions at Techneqatar.
+                  when applying for positions at Technewqatar.
                 </li>
               </ul>
             </CardContent>
@@ -137,7 +137,7 @@ const Privacy = () => {
                 If you have questions or comments about this Privacy Policy, please contact us at:
               </p>
               <div className="mt-4 p-4 bg-muted rounded-lg">
-                <p><strong>Techneqatar</strong></p>
+                <p><strong>Technewqatar</strong></p>
                 <p>Doha, Qatar</p>
                 <p>Email: info@techneqatar.com</p>
                 <p>Phone: +974 XXXX XXXX</p>

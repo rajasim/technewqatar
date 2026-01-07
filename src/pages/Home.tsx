@@ -14,7 +14,7 @@ const Home = () => {
 
   const stats = [
     { label: "Years of Experience", value: "15+", icon: TrendingUp },
-    { label: "Government Projects", value: "50+", icon: Building2 },
+    { label: "development Projects", value: "50+", icon: Building2 },
     { label: "Ongoing Projects", value: "12", icon: Users },
     { label: "Certifications", value: "8+", icon: Award },
   ];
@@ -23,7 +23,7 @@ const Home = () => {
     {
       icon: Building2,
       title: "Civil & Structural Construction",
-      description: "Complete civil engineering and structural construction services for government and commercial projects.",
+      description: "Complete civil engineering and structural construction services for development and commercial projects.",
     },
     {
       icon: Construction,
@@ -44,35 +44,41 @@ const Home = () => {
 
   const featuredProjects = [
     {
-      title: "Qatar National Infrastructure Development",
-      client: "Public Works Authority (Ashghal)",
+      title: "Sports & Fitness Facilities",
+      client: "Private Corporate Client",
       location: "Doha, Qatar",
-      image: "https://miaoda-site-img.s3cdn.medo.dev/images/489b7e87-68e3-4110-8f97-3215b9cf7e64.jpg",
+      scope: "Building new facilities or renovating existing ones to meet the needs of athletes, fitness enthusiasts, and community members..",
       status: "Completed",
+      category: "development",
+      image: "/images/sport.jpeg",
     },
     {
-      title: "Government Commercial Complex",
-      client: "Ministry of Municipality",
+      title: " Swimming Pool & Spa  ",
+      client: "private Client",
       location: "Al Rayyan, Qatar",
-      image: "https://miaoda-site-img.s3cdn.medo.dev/images/798f3936-44e5-4321-b495-9e181e636223.jpg",
+      scope: "work includes the design, supply, construction, installation, testing, and commissioning of a swimming pool and spa, complete with mechanical, electrical, plumbing.",
       status: "Ongoing",
+      category: "development",
+      image: "/images/spa.jpeg",
     },
     {
-      title: "Infrastructure Modernization Project",
-      client: "Qatar Government",
+      title: "Landscape Works ",
+      client: "private Client",
       location: "Al Wakrah, Qatar",
-      image: "https://miaoda-site-img.s3cdn.medo.dev/images/13edfda1-6318-4931-9f0d-2fbd17700415.jpg",
+      scope: "Landscape works include site clearing, leveling, soil preparation, planting of trees and planters, and final cleaning with handover.",
       status: "Completed",
+      category: "development",
+      image: "/images/landscape.jpeg",
     },
   ];
 
   const certifications = [
-    "MMUP/MME Registration",
-    "Ashghal Approval",
-    "ISO 9001:2015",
-    "ISO 14001:2015",
+    "Commercial Registration Certificate (CR)",
     "ISO 45001:2018",
-    "Qatar Trade License",
+    "ISO 14001:2015",
+    "ISO 9001:2015",
+    "(OCCI) Membership Certificate",
+    
   ];
 
   return (
@@ -90,13 +96,13 @@ const Home = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-white relative z-10 animate-scale-in">
           <Badge className="mb-6 bg-accent text-accent-foreground hover:bg-accent/90 animate-bounce-slow inline-flex items-center gap-2">
             <Sparkles className="w-4 h-4" />
-            Government & Infrastructure Specialists
+            Development & Infrastructure Specialists
           </Badge>
           <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold mb-6 leading-tight animate-slide-down">
-            Techneqatar – Building Qatar's Future
+            Technew qatar – Building Qatar's Future
           </h1>
           <p className="text-lg md:text-xl mb-8 opacity-95 max-w-2xl mx-auto animate-slide-up" style={{ animationDelay: '200ms' }}>
-            Leading construction company specializing in government and infrastructure projects across Qatar, 
+            Leading construction company specializing in development and infrastructure projects across Qatar, 
             committed to excellence and Qatar National Vision 2030.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up" style={{ animationDelay: '400ms' }}>
@@ -140,13 +146,13 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-12 items-center">
             <div className={aboutSection.isVisible ? 'animate-slide-right' : 'opacity-0'}>
-              <Badge className="mb-4 bg-primary/10 text-primary hover:bg-primary/20 animate-bounce-slow">About Techneqatar</Badge>
+              <Badge className="mb-4 bg-primary/10 text-primary hover:bg-primary/20 animate-bounce-slow">About Technew qatar</Badge>
               <h2 className="text-3xl xl:text-5xl font-bold mb-6 leading-tight">
                 Qatar's Trusted Construction Partner
               </h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                With over 15 years of excellence in the construction industry, Techneqatar has established itself as a leading 
-                construction company in Qatar, specializing in government and infrastructure projects. We are committed to 
+                With over 15 years of excellence in the construction industry, Technew qatar has established itself as a leading 
+                construction company in Qatar, specializing in development and infrastructure projects. We are committed to 
                 delivering world-class construction solutions that align with Qatar National Vision 2030.
               </p>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
@@ -256,9 +262,9 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className={`text-center mb-16 ${projectsSection.isVisible ? 'animate-slide-down' : 'opacity-0'}`}>
             <Badge className="mb-4 bg-primary/10 text-primary hover:bg-primary/20">Featured Projects</Badge>
-            <h2 className="text-3xl xl:text-5xl font-bold mb-4">Government Projects Portfolio</h2>
+            <h2 className="text-3xl xl:text-5xl font-bold mb-4">development Projects Portfolio</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Delivering excellence in government and infrastructure construction across Qatar
+              Delivering excellence in development and infrastructure construction across Qatar
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
@@ -316,7 +322,7 @@ const Home = () => {
             <Badge className="mb-4 bg-accent/10 text-accent hover:bg-accent/20">Certifications</Badge>
             <h2 className="text-3xl xl:text-5xl font-bold mb-4">Certified & Approved</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Fully certified and approved for government construction projects in Qatar
+              Fully certified and approved for development construction projects in Qatar
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 max-w-5xl mx-auto">
@@ -349,7 +355,7 @@ const Home = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 animate-scale-in">
           <h2 className="text-3xl xl:text-5xl font-bold mb-6 animate-slide-down">Ready to Start Your Project?</h2>
           <p className="text-lg xl:text-xl mb-10 opacity-95 max-w-2xl mx-auto animate-slide-up" style={{ animationDelay: '200ms' }}>
-            Partner with Qatar's trusted construction experts for your next government or infrastructure project. 
+            Partner with Qatar's trusted construction experts for your next development or infrastructure project. 
             Let's build the future together.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up" style={{ animationDelay: '400ms' }}>

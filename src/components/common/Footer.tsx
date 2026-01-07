@@ -11,10 +11,10 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center">
-                <span className="text-xl font-bold text-secondary-foreground">T</span>
+               <img src="/public/Screenshot 2026-01-02 235230.png" alt="Logo" className="w-full h-full object-contain" />
               </div>
               <div className="flex flex-col">
-                <span className="text-lg font-bold">Techneqatar</span>
+                <span className="text-lg font-bold">Technew qatar</span>
                 <span className="text-xs opacity-80">Building Qatar's Future</span>
               </div>
             </div>
@@ -50,15 +50,16 @@ const Footer = () => {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span className="opacity-90">Doha, Qatar</span>
+                <span className="opacity-90">C.R.No : 172864, P.O.Box : 23690, Doha, Qatar</span>
+
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4 flex-shrink-0" />
-                <span className="opacity-90">+974 XXXX XXXX</span>
+                <span className="opacity-90">+974 7713 7003</span>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4 flex-shrink-0" />
-                <span className="opacity-90">info@techneqatar.com</span>
+                <span className="opacity-90">info@technewqatar.com</span>
               </li>
               <li className="flex items-center gap-2">
                 <Building2 className="w-4 h-4 flex-shrink-0" />
@@ -71,7 +72,7 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t border-primary-foreground/20">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
             <p className="opacity-90">
-              {currentYear} Techneqatar
+              {currentYear} Technew qatar
             </p>
             <div className="flex gap-6">
               <Link to="/privacy" className="opacity-90 hover:opacity-100 hover:underline transition-opacity">

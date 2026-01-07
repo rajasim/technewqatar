@@ -15,11 +15,12 @@ const Header = () => {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <Link to="/" className="flex items-center gap-3">
-            <div className="w-12 h-12 rounded-lg bg-primary flex items-center justify-center">
-              <span className="text-2xl font-bold text-primary-foreground">T</span>
-            </div>
+           <div className="w-12 h-12 rounded-lg bg-primary flex items-center justify-center">
+  <img src="/public/Screenshot 2026-01-02 235230.png" alt="Logo" className="w-full h-full object-contain" />
+</div>
+
             <div className="flex flex-col">
-              <span className="text-xl font-bold text-primary">Techneqatar</span>
+              <span className="text-xl font-bold text-primary">Technewqatar</span>
               <span className="text-xs text-muted-foreground">Building Qatar's Future</span>
             </div>
           </Link>
@@ -41,9 +42,7 @@ const Header = () => {
           </div>
 
           <div className="hidden xl:flex items-center gap-3">
-            <Button asChild variant="outline">
-              <Link to="/contact">Contact Us</Link>
-            </Button>
+           
             <Button asChild>
               <Link to="/contact">Request Proposal</Link>
             </Button>

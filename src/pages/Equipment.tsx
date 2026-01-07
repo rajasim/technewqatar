@@ -39,7 +39,7 @@ const Equipment = () => {
     },
     {
       title: "Project Management",
-      description: "Experienced project managers skilled in delivering complex government and infrastructure projects on time and within budget.",
+      description: "Experienced project managers skilled in delivering complex development and infrastructure projects on time and within budget.",
     },
     {
       title: "Quality Control",

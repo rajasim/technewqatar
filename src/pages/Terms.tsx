@@ -16,7 +16,7 @@ const Terms = () => {
             </CardHeader>
             <CardContent className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                These Terms and Conditions constitute a legally binding agreement between you and Techneqatar 
+                These Terms and Conditions constitute a legally binding agreement between you and Technewqatar 
                 ("Company," "we," "us," or "our") concerning your access to and use of our website and services.
               </p>
               <p>
@@ -33,7 +33,7 @@ const Terms = () => {
             </CardHeader>
             <CardContent className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                This website is intended to provide information about Techneqatar's construction services, projects, 
+                This website is intended to provide information about Technewqatar's construction services, projects, 
                 and capabilities. You may use the website for lawful purposes only and in accordance with these Terms.
               </p>
               <p>You agree not to:</p>
@@ -54,7 +54,7 @@ const Terms = () => {
             <CardContent className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
                 Unless otherwise indicated, the website and all content, features, and functionality (including but 
-                not limited to text, graphics, logos, images, and software) are owned by Techneqatar and are 
+                not limited to text, graphics, logos, images, and software) are owned by Technewqatar and are 
                 protected by copyright, trademark, and other intellectual property laws.
               </p>
               <p>
@@ -106,7 +106,7 @@ const Terms = () => {
             <CardContent className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
                 The website may contain links to third-party websites or services that are not owned or controlled 
-                by Techneqatar. We have no control over and assume no responsibility for the content, privacy policies, 
+                by Technewqatar. We have no control over and assume no responsibility for the content, privacy policies, 
                 or practices of any third-party websites or services.
               </p>
             </CardContent>
@@ -118,7 +118,7 @@ const Terms = () => {
             </CardHeader>
             <CardContent className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                The website is provided on an "as is" and "as available" basis. Techneqatar makes no warranties, 
+                The website is provided on an "as is" and "as available" basis. Technewqatar makes no warranties, 
                 expressed or implied, regarding the website's operation or the information, content, or materials 
                 included on the website.
               </p>
@@ -135,7 +135,7 @@ const Terms = () => {
             </CardHeader>
             <CardContent className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                To the fullest extent permitted by applicable law, Techneqatar shall not be liable for any indirect, 
+                To the fullest extent permitted by applicable law, Technewqatar shall not be liable for any indirect, 
                 incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether 
                 incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses 
                 resulting from your access to or use of the website.
@@ -177,7 +177,7 @@ const Terms = () => {
                 If you have any questions about these Terms and Conditions, please contact us at:
               </p>
               <div className="mt-4 p-4 bg-muted rounded-lg">
-                <p><strong>Techneqatar</strong></p>
+                <p><strong>Technewqatar</strong></p>
                 <p>Doha, Qatar</p>
                 <p>Email: info@techneqatar.com</p>
                 <p>Phone: +974 XXXX XXXX</p>

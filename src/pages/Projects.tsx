@@ -9,58 +9,58 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "Qatar National Infrastructure Development",
-      client: "Public Works Authority (Ashghal)",
+      title: "Sports & Fitness Facilities",
+      client: "Private Corporate Client",
       location: "Doha, Qatar",
-      scope: "Complete infrastructure development including roads, drainage systems, and utility networks for a major government district.",
+      scope: "Building new facilities or renovating existing ones to meet the needs of athletes, fitness enthusiasts, and community members..",
       status: "Completed",
-      category: "government",
-      image: "https://miaoda-site-img.s3cdn.medo.dev/images/489b7e87-68e3-4110-8f97-3215b9cf7e64.jpg",
+      category: "development",
+      image: "/images/sport.jpeg",
     },
     {
-      title: "Government Commercial Complex",
-      client: "Ministry of Municipality",
+      title: " Swimming Pool & Spa  ",
+      client: "private Client",
       location: "Al Rayyan, Qatar",
-      scope: "Construction of a multi-story commercial complex including office spaces, retail areas, and underground parking facilities.",
+      scope: "work includes the design, supply, construction, installation, testing, and commissioning of a swimming pool and spa, complete with mechanical, electrical, plumbing.",
       status: "Ongoing",
-      category: "government",
-      image: "https://miaoda-site-img.s3cdn.medo.dev/images/798f3936-44e5-4321-b495-9e181e636223.jpg",
+      category: "development",
+      image: "/images/spa.jpeg",
     },
     {
-      title: "Infrastructure Modernization Project",
-      client: "Qatar Government",
+      title: "Landscape Works ",
+      client: "private Client",
       location: "Al Wakrah, Qatar",
-      scope: "Modernization of existing infrastructure including road widening, drainage upgrades, and utility system enhancements.",
+      scope: "Landscape works include site clearing, leveling, soil preparation, planting of trees and planters, and final cleaning with handover.",
       status: "Completed",
-      category: "government",
-      image: "https://miaoda-site-img.s3cdn.medo.dev/images/13edfda1-6318-4931-9f0d-2fbd17700415.jpg",
+      category: "development",
+      image: "/images/landscape.jpeg",
     },
     {
-      title: "Public Facilities Construction",
-      client: "Qatar Government Authority",
+      title: "Electrical Works",
+      client: "private coorporate Client",
       location: "Lusail, Qatar",
-      scope: "Design and construction of public facilities including community centers, recreational areas, and supporting infrastructure.",
+      scope: "supply and installation of wiring, conduits, switches, sockets, lighting fixtures, distribution boards, earthing, testing, and commissioning as per approved drawings and standards.",
       status: "Ongoing",
-      category: "government",
-      image: "https://miaoda-site-img.s3cdn.medo.dev/images/db40a976-5fc6-4a72-b970-94fd017f612f.jpg",
+      category: "development",
+      image: "/images/stell.jpeg",
     },
     {
-      title: "Commercial Building Development",
+      title: " Steel Fabrication Works ",
       client: "Private Corporate Client",
       location: "West Bay, Doha",
-      scope: "Complete construction of a modern commercial building with state-of-the-art facilities and sustainable design features.",
+      scope: "supply, fabrication, welding, surface treatment, delivery, and erection of structural steel members as per approved drawings and specifications.",
       status: "Completed",
       category: "commercial",
-      image: "https://miaoda-site-img.s3cdn.medo.dev/images/798f3936-44e5-4321-b495-9e181e636223.jpg",
+      image: "/images/electric.jpeg",
     },
     {
-      title: "Industrial Facility Construction",
-      client: "Industrial Corporation",
+      title: "HVAC Works",
+      client: "private coorporate Client",
       location: "Mesaieed, Qatar",
-      scope: "Construction of industrial facilities including warehouses, processing units, and supporting infrastructure.",
+      scope: "installation, testing, and commissioning of air conditioning and ventilation systems, including ducting, piping, insulation, controls, and related accessories as per approved drawings and standards.",
       status: "Completed",
       category: "commercial",
-      image: "https://miaoda-site-img.s3cdn.medo.dev/images/7e4daae7-641d-491b-b412-eb62fdd004f1.jpg",
+      image: "/images/hmcv.jpeg",
     },
   ];
 
@@ -75,14 +75,14 @@ const Projects = () => {
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h1 className="text-4xl xl:text-5xl font-bold mb-6">Our Projects</h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Showcasing our portfolio of successful government and commercial construction projects across Qatar.
+              Showcasing our portfolio of successful development and commercial construction projects across Qatar.
             </p>
           </div>
 
           <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
             <TabsList className="grid w-full max-w-md mx-auto grid-cols-3 mb-12">
               <TabsTrigger value="all">All Projects</TabsTrigger>
-              <TabsTrigger value="government">Government</TabsTrigger>
+              <TabsTrigger value="development">Development</TabsTrigger>
               <TabsTrigger value="commercial">Commercial</TabsTrigger>
             </TabsList>
 
@@ -164,7 +164,7 @@ const Projects = () => {
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardContent className="pt-6">
                 <div className="text-4xl font-bold text-primary mb-2">35+</div>
-                <div className="text-sm text-muted-foreground">Government Clients</div>
+                <div className="text-sm text-muted-foreground">Development Clients</div>
               </CardContent>
             </Card>
             <Card className="text-center hover:shadow-lg transition-shadow">

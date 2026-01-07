@@ -7,9 +7,9 @@ const About = () => {
       <section className="py-20 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <h1 className="text-4xl xl:text-5xl font-bold mb-6">About Techneqatar</h1>
+            <h1 className="text-4xl xl:text-5xl font-bold mb-6">About Technewqatar</h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              A leading construction company in Qatar, specializing in government and infrastructure projects 
+              A leading construction company in Qatar, specializing in development and infrastructure projects 
               with a commitment to excellence, safety, and Qatar National Vision 2030.
             </p>
           </div>
@@ -26,16 +26,16 @@ const About = () => {
               <h2 className="text-3xl font-bold mb-6">Company Overview</h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Techneqatar is a premier construction company based in Qatar, with over 15 years of experience 
-                  in delivering high-quality government and infrastructure projects across the nation.
+                  Technewqatar is a premier construction company based in Qatar, with over 15 years of experience 
+                  in delivering high-quality development and infrastructure projects across the nation.
                 </p>
                 <p>
-                  We have established ourselves as a trusted partner for Qatar Government entities, Semi-Government 
+                  We have established ourselves as a trusted partner for Qatar Development entities, Semi-Development 
                   Authorities, and Large Corporates, consistently delivering projects that meet the highest standards 
                   of quality, safety, and compliance.
                 </p>
                 <p>
-                  Our expertise spans civil and structural construction, government infrastructure projects, roads, 
+                  Our expertise spans civil and structural construction, development infrastructure projects, roads, 
                   drainage, utilities, commercial buildings, and turnkey construction solutions. With full MMUP/MME 
                   registration and Ashghal approval, we are fully equipped to handle projects of any scale and complexity.
                 </p>
@@ -61,7 +61,7 @@ const About = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground leading-relaxed">
-                  To be the most trusted and preferred construction partner for government and infrastructure 
+                  To be the most trusted and preferred construction partner for development and infrastructure 
                   projects in Qatar, recognized for our unwavering commitment to quality, safety, and innovation. 
                   We envision a future where our work contributes significantly to Qatar's development and the 
                   realization of Qatar National Vision 2030.
@@ -102,7 +102,7 @@ const About = () => {
               <CardContent>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
-                    "At Techneqatar, we believe that construction is more than just building structures – it's about 
+                    "At Technewqatar, we believe that construction is more than just building structures – it's about 
                     creating lasting value for our clients, our communities, and our nation. Every project we undertake 
                     is an opportunity to demonstrate our commitment to excellence and contribute to Qatar's remarkable 
                     journey of growth and development."
@@ -115,7 +115,7 @@ const About = () => {
                   </p>
                   <div className="mt-6 pt-6 border-t border-border">
                     <p className="font-semibold text-foreground">Management Team</p>
-                    <p className="text-sm">Techneqatar</p>
+                    <p className="text-sm">Technewqatar</p>
                   </div>
                 </div>
               </CardContent>
@@ -136,7 +136,7 @@ const About = () => {
             <CardContent>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Quality and safety are at the core of everything we do at Techneqatar. We maintain rigorous quality 
+                  Quality and safety are at the core of everything we do at Technewqatar. We maintain rigorous quality 
                   management systems certified to ISO 9001:2015 standards, ensuring that every project meets or exceeds 
                   client expectations and regulatory requirements.
                 </p>

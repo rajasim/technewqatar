@@ -68,12 +68,7 @@ const routes: RouteConfig[] = [
     element: <Clients />,
     visible: true
   },
-  {
-    name: 'Careers',
-    path: '/careers',
-    element: <Careers />,
-    visible: true
-  },
+  
   {
     name: 'Contact',
     path: '/contact',

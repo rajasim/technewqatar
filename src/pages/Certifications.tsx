@@ -6,24 +6,24 @@ import { Badge } from "@/components/ui/badge";
 const Certifications = () => {
   const certifications = [
     {
-      title: "MMUP/MME Registration",
+      title: "Commercial Registration Certificate (CR)",
       issuer: "Ministry of Municipality and Planning / Ministry of Municipality and Environment",
       description: "Official registration with Qatar's Ministry of Municipality, authorizing us to undertake construction projects across Qatar.",
-      category: "Government Registration",
+      category: "Development Registration",
       icon: Shield,
       status: "Active",
     },
     {
-      title: "Ashghal Approval",
+      title: "Oman Chamber of Commerce and Industry (OCCI) Membership Certificate",
       issuer: "Public Works Authority (Ashghal)",
-      description: "Approved contractor status with Ashghal, enabling us to bid for and execute government infrastructure projects.",
-      category: "Government Approval",
+      description: "Approved contractor status with Ashghal, enabling us to bid for and execute development infrastructure projects.",
+      category: "Development Approval",
       icon: Award,
       status: "Active",
     },
     {
-      title: "ISO 9001:2015",
-      issuer: "International Organization for Standardization",
+      title: "ISO 45001:2018",
+      issuer: "Occupational Health and Safety Management System",
       description: "Quality Management System certification, demonstrating our commitment to consistent quality in all our construction projects.",
       category: "Quality Management",
       icon: Award,
@@ -31,28 +31,21 @@ const Certifications = () => {
     },
     {
       title: "ISO 14001:2015",
-      issuer: "International Organization for Standardization",
+      issuer: "Environmental Management System",
       description: "Environmental Management System certification, reflecting our dedication to environmental responsibility and sustainable practices.",
       category: "Environmental Management",
       icon: Award,
       status: "Active",
     },
     {
-      title: "ISO 45001:2018",
-      issuer: "International Organization for Standardization",
+      title: "ISO 9001:2015",
+      issuer: "Quality Management System",
       description: "Occupational Health and Safety Management System certification, ensuring the highest standards of workplace safety.",
       category: "Health & Safety",
       icon: Shield,
       status: "Active",
     },
-    {
-      title: "Qatar Trade License",
-      issuer: "Ministry of Commerce and Industry",
-      description: "Valid trade license authorizing construction and contracting activities in the State of Qatar.",
-      category: "Business License",
-      icon: FileCheck,
-      status: "Active",
-    },
+    
   ];
 
   const complianceAreas = [
@@ -70,7 +63,7 @@ const Certifications = () => {
     },
     {
       title: "Regulatory Compliance",
-      description: "Full compliance with all Qatar government regulations, building codes, and construction standards.",
+      description: "Full compliance with all Qatar development regulations, building codes, and construction standards.",
     },
   ];
 
@@ -81,7 +74,7 @@ const Certifications = () => {
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h1 className="text-4xl xl:text-5xl font-bold mb-6">Certifications & Approvals</h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Fully certified and approved for government construction projects in Qatar, 
+              Fully certified and approved for development construction projects in Qatar, 
               demonstrating our commitment to quality, safety, and compliance.
             </p>
           </div>
@@ -104,10 +97,7 @@ const Certifications = () => {
                   <p className="text-muted-foreground leading-relaxed mb-4">
                     {cert.description}
                   </p>
-                  <Button variant="outline" size="sm" className="w-full">
-                    <Download className="w-4 h-4 mr-2" />
-                    Download Certificate (PDF)
-                  </Button>
+                  
                 </CardContent>
               </Card>
             ))}
@@ -156,13 +146,13 @@ const Certifications = () => {
                   local standards.
                 </p>
                 <p>
-                  For our clients, particularly government entities and large corporates, these certifications 
+                  For our clients, particularly development entities and large corporates, these certifications 
                   provide assurance that we have the expertise, systems, and processes in place to deliver projects 
                   that meet or exceed expectations. They demonstrate our capability to handle complex projects while 
                   maintaining strict adherence to quality, safety, and environmental standards.
                 </p>
                 <p>
-                  Our MMUP/MME registration and Ashghal approval specifically qualify us to undertake government 
+                  Our MMUP/MME registration and Ashghal approval specifically qualify us to undertake development 
                   infrastructure projects in Qatar, while our ISO certifications reflect our commitment to 
                   international best practices in quality management, environmental responsibility, and occupational 
                   health and safety.

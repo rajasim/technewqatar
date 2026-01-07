@@ -3,14 +3,14 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const Clients = () => {
   const governmentClients = [
-    "Public Works Authority (Ashghal)",
-    "Ministry of Municipality",
-    "Ministry of Transport",
-    "Qatar General Electricity & Water Corporation (Kahramaa)",
-    "Qatar Petroleum",
-    "Qatar Rail",
-    "Qatar Foundation",
-    "Hamad Medical Corporation",
+    " KATA RA HOSPITALITY",
+    "MEKDAM TECHNOLOGY",
+    "HBK CONTRACTING COMPANY",
+    "AL JABER GROUP (AJG)",
+    "UCC Holding",
+    "United Development Company (UDC)",
+    "Al Ali Engineering Co",
+    "Aspire Logistics",
   ];
 
   const corporateClients = [
@@ -24,22 +24,22 @@ const Clients = () => {
 
   const testimonials = [
     {
-      quote: "Techneqatar has consistently delivered high-quality work on our infrastructure projects. Their commitment to safety, quality, and timely completion makes them a valued partner for government construction projects.",
-      author: "Government Authority Representative",
+      quote: "Technewqatar has consistently delivered high-quality work on our infrastructure projects. Their commitment to safety, quality, and timely completion makes them a valued partner for development construction projects.",
+      author: "Development Authority Representative",
       position: "Project Director",
-      organization: "Qatar Government Entity",
+      organization: "Qatar Development Entity",
     },
     {
-      quote: "Working with Techneqatar on our commercial development was an excellent experience. Their professional approach, technical expertise, and attention to detail ensured the project was completed to the highest standards.",
+      quote: "Working with Technewqatar on our commercial development was an excellent experience. Their professional approach, technical expertise, and attention to detail ensured the project was completed to the highest standards.",
       author: "Corporate Client",
       position: "Development Manager",
       organization: "Major Real Estate Developer",
     },
     {
-      quote: "The team at Techneqatar demonstrated exceptional project management capabilities and technical competence throughout our infrastructure modernization project. We highly recommend them for complex construction projects.",
+      quote: "The team at Technewqatar demonstrated exceptional project management capabilities and technical competence throughout our infrastructure modernization project. We highly recommend them for complex construction projects.",
       author: "Project Manager",
       position: "Infrastructure Development",
-      organization: "Semi-Government Authority",
+      organization: "Semi-Development Authority",
     },
   ];
 
@@ -50,7 +50,7 @@ const Clients = () => {
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h1 className="text-4xl xl:text-5xl font-bold mb-6">Clients & Partners</h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Trusted by Qatar's leading government entities, semi-government authorities, 
+              Trusted by Qatar's leading development entities, semi-development authorities, 
               and major corporate organizations for construction excellence.
             </p>
           </div>
@@ -59,7 +59,7 @@ const Clients = () => {
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardContent className="pt-6">
                 <div className="text-3xl font-bold text-primary mb-2">35+</div>
-                <div className="text-sm text-muted-foreground">Government Clients</div>
+                <div className="text-sm text-muted-foreground">Development Clients</div>
               </CardContent>
             </Card>
             <Card className="text-center hover:shadow-lg transition-shadow">
@@ -87,9 +87,9 @@ const Clients = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-12">
-            <h2 className="text-3xl xl:text-4xl font-bold mb-4">Government & Semi-Government Clients</h2>
+            <h2 className="text-3xl xl:text-4xl font-bold mb-4">Development & Semi-Development Clients</h2>
             <p className="text-lg text-muted-foreground">
-              Proud to serve Qatar's leading government entities and authorities
+              Proud to serve Qatar's leading development entities and authorities
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
@@ -135,7 +135,7 @@ const Clients = () => {
           <div className="mb-12">
             <h2 className="text-3xl xl:text-4xl font-bold mb-4">Client Testimonials</h2>
             <p className="text-lg text-muted-foreground">
-              What our clients say about working with Techneqatar
+              What our clients say about working with Technewqatar
             </p>
           </div>
           <div className="grid grid-cols-1 xl:grid-cols-3 gap-8">
@@ -162,20 +162,20 @@ const Clients = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Card className="hover:shadow-lg transition-shadow">
             <CardContent className="p-8">
-              <h2 className="text-2xl font-bold mb-6">Why Clients Choose Techneqatar</h2>
+              <h2 className="text-2xl font-bold mb-6">Why Clients Choose Technewqatar</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
                   <h3 className="text-xl font-semibold mb-3">Proven Track Record</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Over 15 years of successful project delivery for government and corporate clients, 
+                    Over 15 years of successful project delivery for development and corporate clients, 
                     with a portfolio of 50+ completed projects demonstrating our capability and reliability.
                   </p>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-3">Government Approved</h3>
+                  <h3 className="text-xl font-semibold mb-3">Development Approved</h3>
                   <p className="text-muted-foreground leading-relaxed">
                     Fully registered with MMUP/MME and approved by Ashghal, meeting all requirements 
-                    for government construction projects in Qatar.
+                    for development construction projects in Qatar.
                   </p>
                 </div>
                 <div>

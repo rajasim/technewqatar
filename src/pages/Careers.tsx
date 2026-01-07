@@ -24,7 +24,7 @@ const Careers = () => {
       department: "Engineering",
       location: "Doha, Qatar",
       type: "Full-time",
-      description: "Experienced civil engineer for government infrastructure projects. Minimum 5 years experience in construction projects.",
+      description: "Experienced civil engineer for development infrastructure projects. Minimum 5 years experience in construction projects.",
     },
     {
       title: "Project Manager",
@@ -59,7 +59,7 @@ const Careers = () => {
       department: "Engineering",
       location: "Doha, Qatar",
       type: "Full-time",
-      description: "Structural engineer with expertise in building design and analysis. Experience with government projects preferred.",
+      description: "Structural engineer with expertise in building design and analysis. Experience with development projects preferred.",
     },
   ];
 
@@ -217,7 +217,7 @@ const Careers = () => {
           <div className="mb-12 text-center">
             <h2 className="text-3xl xl:text-4xl font-bold mb-4">Submit Your Application</h2>
             <p className="text-lg text-muted-foreground">
-              Fill out the form below to apply for a position at Techneqatar
+              Fill out the form below to apply for a position at Technewqatar
             </p>
           </div>
           <Card className="hover:shadow-lg transition-shadow">

@@ -8,7 +8,7 @@ const Services = () => {
     {
       icon: Building2,
       title: "Civil & Structural Construction",
-      description: "Comprehensive civil and structural construction services for government and commercial projects, including foundations, concrete works, steel structures, and complete building construction.",
+      description: "Comprehensive civil and structural construction services for development and commercial projects, including foundations, concrete works, steel structures, and complete building construction.",
       features: [
         "Foundation and earthworks",
         "Concrete and reinforcement works",
@@ -18,13 +18,13 @@ const Services = () => {
     },
     {
       icon: Hammer,
-      title: "Government Infrastructure Projects",
-      description: "Specialized expertise in delivering large-scale government infrastructure projects, working closely with Qatar Government entities and Semi-Government Authorities.",
+      title: "Development Infrastructure Projects",
+      description: "Specialized expertise in delivering large-scale development infrastructure projects, working closely with Qatar development entities and Semi-development Authorities.",
       features: [
         "Public facilities construction",
-        "Government building projects",
+        "Development building projects",
         "Infrastructure development",
-        "Compliance with government standards",
+        "Compliance with development standards",
       ],
     },
     {
@@ -91,7 +91,7 @@ const Services = () => {
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h1 className="text-4xl xl:text-5xl font-bold mb-6">Our Services</h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Comprehensive construction services tailored for government and infrastructure projects across Qatar, 
+              Comprehensive construction services tailored for development and infrastructure projects across Qatar, 
               delivered with excellence and professionalism.
             </p>
           </div>
@@ -131,13 +131,13 @@ const Services = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold mb-6">Why Choose Techneqatar?</h2>
+              <h2 className="text-3xl font-bold mb-6">Why Choose Technewqatar?</h2>
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Government Approved</h3>
+                  <h3 className="text-xl font-semibold mb-2">Development Approved</h3>
                   <p className="text-muted-foreground">
                     Fully registered with MMUP/MME and approved by Ashghal, ensuring compliance with all 
-                    government construction requirements and standards.
+                    development construction requirements and standards.
                   </p>
                 </div>
                 <div>
